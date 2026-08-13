@@ -23,4 +23,4 @@ Use Up/Down and A in the menu. Hold Start+Select to leave any diagnostic screen.
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-The finished ROM is `build\hello.nes`.
+The finished ROM is `build\debug.nes`.
