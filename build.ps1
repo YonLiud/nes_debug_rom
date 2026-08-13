@@ -14,10 +14,10 @@ if (-not (Test-Path $ca65) -or -not (Test-Path $ld65)) {
 }
 
 New-Item -ItemType Directory -Force -Path '.\build' | Out-Null
-& $ca65 .\hello.asm -g -o .\build\hello.o
-& $ld65 -C .\nes.cfg .\build\hello.o -o .\build\hello.nes -m .\build\hello.map
+& $ca65 .\debug.asm -g -o .\build\debug.o
+& $ld65 -C .\nes.cfg .\build\debug.o -o .\build\debug.nes -m .\build\debug.map
 
-$rom = Get-Item .\build\hello.nes
+$rom = Get-Item .\build\debug.nes
 if ($rom.Length -ne 24592) {
     throw "Unexpected ROM size: $($rom.Length) bytes (expected 24592)."
 }
