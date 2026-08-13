@@ -3,6 +3,10 @@
 A self-contained mapper-0/NROM-128 diagnostic ROM written in ca65 assembly.
 Use Up/Down and A in the menu. Hold Start+Select to leave any diagnostic screen.
 
+## Download
+
+The finished ROM is [`build\debug.nes`](https://github.com/YonLiud/nes_debug_rom/blob/main/build/debug.nes).
+
 ## Diagnostics
 
 - `COLOR SNAKE` — slow full-screen palette changes and an animated color trail
@@ -23,4 +27,7 @@ Use Up/Down and A in the menu. Hold Start+Select to leave any diagnostic screen.
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-The finished ROM is `build\debug.nes`.
+
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/09f8cf98-c7da-428c-acb9-b037a41227db" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c2022d55-0b69-42ab-8b32-9bcae1b3122a" />
